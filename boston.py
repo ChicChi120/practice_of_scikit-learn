@@ -44,13 +44,6 @@ pipeline = Pipeline([
     ('scaler', PowerTransformer()),
     ('reg', LinearRegression())
 ])
-'''
-scaler = PowerTransformer()
-scaler.fit(x_train)
-
-x_train_scaled = scaler.transform(x_train)
-x_test_scaled = scaler.transform(x_test)
-'''
 
 '''
 Step5 : モデルの訓練
